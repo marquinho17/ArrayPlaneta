@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planeta</title>
+
+    <script>
+
+        var planetas = ["Terra", "Marte", "Plutão", "Vênus", "Júpiter", "Saturno"]; // array guardando os planetas já inseridos
+
+        function cadastro_planeta() {
+
+            var digite_planeta = prompt("Informe um planeta:"); // Para guardar o nome que será colocado
+
+            if (planetas.includes(digite_planeta)) {
+               alert("O planeta " + digite_planeta + " está na lista.");  // Se o nome do planeta digitado estiver na lista, vai retornar uma mensagem de alerta monstrando que o planeta já está na lista
+            } else {
+                alert("O planeta " + digite_planeta + " não está na lista"); // Se o nome do planeta não estivar na lista, vai retornar uma mensagem monstrando que o planeta não está na lista
+            } 
+            
+        }
+
+    </script>
+</head>
+
+<body>
+   <button onclick="cadastro_planeta()">Clique aqui</button> <!-- O butão é fazer o código ser iniciado ao clicar, sendo monstrando em mensagem de alerta-->
+</body>
+
+</html>
